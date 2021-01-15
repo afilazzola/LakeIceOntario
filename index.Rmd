@@ -35,7 +35,7 @@ lakes <- read.csv("ice_free_predictions.csv") %>% filter(Pour_long < -59) %>% fi
 
 ## Plot lakes
 leaflet(data=lakes) %>% addTiles() %>% 
-  addMarkers(~Pour_long, ~Pour_lat, popup = ~as.character(rcp85), label = ~as.character(rcp85), icon = lakeIcons)
+  addMarkers(~Pour_long, ~Pour_lat, popup = ~as.character(rcp85), label = ~as.character(rcp85))
 
 
 ```
